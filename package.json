@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Google Chrome Extension",
   "main": "index.js",
-  "author": "Rory Pearson <Rorypearson2003@hotmail.com>",
+  "author": "Rory Pearson",
   "license": "MIT",
   "scripts": {
     "watch": "webpack --mode development --watch",
