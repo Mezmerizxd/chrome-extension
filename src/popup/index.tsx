@@ -1,7 +1,11 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
+import { QueryClientProvider } from "react-query";
+import { queryClient } from "./libs/react-query";
 
 import "./index.css";
+
+import App from "./app";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -9,11 +13,9 @@ const root = ReactDOM.createRoot(
 
 async function main() {
   root.render(
-    <div className="w-[500px] h-[300px] bg-background border-none outline-none">
-      <h1 className="flex items-center justify-center h-full text-lg text-accent-light">
-        I REMEMBERED HOW TO CENTER DIV
-      </h1>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
   );
 }
 

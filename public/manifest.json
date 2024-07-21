@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension",
+  "name": "Social Club Extension",
   "version": "1.0",
-  "description": "A Chrome extension built with TypeScript and React",
+  "description": "Social Club Things",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -14,5 +14,6 @@
   "background": {
     "service_worker": "background.bundle.js"
   },
-  "permissions": ["storage"]
+  "permissions": ["webRequest", "tabs", "activeTab", "storage", "cookies"],
+  "host_permissions": ["*://*.rockstargames.com/*"]
 }
